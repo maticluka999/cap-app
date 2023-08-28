@@ -1,3 +1,57 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Disable arrows inside number input */
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+@layer base {
+  :root {
+    background-color: black;
+
+    --color-primary-main: 255 150 0;
+    --color-primary-light: 255 180 0;
+    --color-primary-dark: 220 115 0;
+    --color-primary-contrast-text: 255 255 255;
+
+    --color-secondary-main: 255 255 255;
+    --color-secondary-contrast-text: 56 182 255;
+
+    --color-background-default: 0 0 0;
+    --color-background-paper: 55 55 55;
+
+    --color-text-primary: 255 255 255;
+    --color-text-secondary: 217 217 217;
+    --color-text-disabled: 107 112 123;
+
+    --color-error-main: 246 87 87;
+    --color-error-light: 218 104 104;
+    --color-error-dark: 246 87 87;
+
+    --color-warning-main: 237 108 2;
+    --color-warning-light: 255 152 0;
+    --color-warning-dark: 230 81 0;
+
+    --color-info-main: 2 136 209;
+    --color-info-light: 3 169 244;
+    --color-info-dark: 1 87 155;
+
+    --color-success-main: 46 125 50;
+    --color-success-light: 76 175 80;
+    --color-success-dark: 27 94 32;
+
+    --color-action-active: 255 150 0;
+    --color-action-hover: 255 150 0;
+    --color-action-selected: 255 150 0;
+    --color-action-disabled: 107 112 123;
+    --color-action-disabled-background: 0 0 0;
+  }
+}
